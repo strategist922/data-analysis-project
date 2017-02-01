@@ -1,0 +1,13 @@
+appdirs==1.4.0
+oauthlib==2.0.1
+packaging==16.8
+praw==4.3.0
+prawcore==0.7.0
+PyMySQL==0.7.9
+pyparsing==2.1.10
+requests==2.13.0
+requests-oauthlib==0.7.0
+six==1.10.0
+tweepy==3.5.0
+update-checker==0.16
+vaderSentiment==2.5
