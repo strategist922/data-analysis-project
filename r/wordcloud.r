@@ -1,7 +1,8 @@
 # Code reference: https://www.r-bloggers.com/building-wordclouds-in-r/
-
-install.packages(c('tm', 'SnowballC', 'wordcloud'))
-
+list.of.packages <- c("RMySQL", "tm", "SnowballC", "wordcloud")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if (length(new.packages)) install.packages(new.packages)
+ 
 # Load the required libraries
 
 library(tm)
