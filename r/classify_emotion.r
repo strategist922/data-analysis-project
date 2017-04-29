@@ -4,10 +4,13 @@
 # RStem: http://cran.cnr.berkeley.edu/src/contrib/Archive/Rstem/
 # sentiment: https://cran.r-project.org/src/contrib/Archive/sentiment/
 
-list.of.packages <- c("RMySQL", "ggplot2")
+list.of.packages <- c("RMySQL", "ggplot2", "tm")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if (length(new.packages)) install.packages(new.packages)
-  
+
+# install.packages('http://cran.cnr.berkeley.edu/src/contrib/Archive/Rstem/Rstem_0.4-1.tar.gz', repos = NULL, type="source")
+# install.packages('https://cran.r-project.org/src/contrib/Archive/sentiment/sentiment_0.2.tar.gz', repos = NULL, type="source")
+
 library('Rstem')
 library('sentiment')
 library('RMySQL')
